@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { handleCart } from '../redux/reducer'
-import Login from './buttons/Login'
-import Signup from './buttons/Signup'
+import { useState } from "react";
 
 export default function Navbar() {
   const state = useSelector((state)=> state.handleCart)
+  const [loginActive, setLoginActive] = useState(true)
+  const [signupActive, setSignActive] = useState(true)
   return (
 <div className="navigation">
   <nav className="navbar navbar-expand-lg bg-light">
@@ -49,9 +49,9 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="buttons">
-          <Link to="/Login" className="btn btn-outline-dark"><i className="fa fa-sign-in me-1"></i>Вход</Link>
-          <Link to="/signup" className="btn btn-outline-dark"><i className="fa fa-user-plus me-1"></i>Регистрация</Link>
-          <Link to="/cart" className="btn btn-outline-dark"><i className="fa fa-shopping-cart me-1"></i>Корзина({state.length})</Link>
+          <Link className="btn btn-outline-dark" to="/Login" onClick={() => setLoginActive(true)}><i className="fa fa-sign-in me-1"></i>Вход</Link>
+          <Link className="btn btn-outline-dark" to="/Signup" onClick={() => setSignActive(true)}><i className="fa fa-user-plus me-1"></i>Регистрация</Link>
+          <Link className="btn btn-outline-dark" to="/cart"><i className="fa fa-shopping-cart me-1"></i>Корзина({state.length})</Link>
         </div>
       </div>
     </div>

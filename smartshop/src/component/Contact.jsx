@@ -18,23 +18,23 @@ const Contact = () => {
                         <form >
                             <div className="mb-3">
                                 <label for="exampleForm" class="form-label">Ваше полное имя</label>
-                                <input type="text" class="form-control" id="exampleForm" placeholder="John Smith"/>
-</div>
+                                <input type="text" class="form-control" id="exampleForm" placeholder="John Smith" />
+                            </div>
                             <div className="mb-3">
                                 <label for="exampleFormControlInput1" className="form-label">Email</label>
-                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-</div>
-                                <div className="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Текст сообщения</label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                </div>
-                                <button type="submit" className="btn btn-outline-primary">Отправить</button>
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                            </div>
+                            <div className="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Текст сообщения</label>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" className="btn btn-outline-primary">Отправить</button>
                         </form>
-                    </div>
                     </div>
                 </div>
             </div>
-            )
+        </div>
+    )
 }
 
-            export default Contact
+export default Contact
