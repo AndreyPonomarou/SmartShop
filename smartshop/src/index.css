@@ -132,3 +132,42 @@
   width: 400px;
   background-color: #fff;
 }
+.registration__title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.registration {
+  margin: 0 auto;
+  height: calc(100vh - 343px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 80px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+}
+
+.form > input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.btn-registration {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ffab02;
+}
+
+.btn-registration:hover {
+  background-color: #ffab02;
+}
